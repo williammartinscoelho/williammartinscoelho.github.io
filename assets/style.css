@@ -1,0 +1,231 @@
+html {
+    --vermelho: #FF023C;
+    --font-color: #273849;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--font-color);
+}
+
+.vermelho {
+    color: var(--vermelho)
+}
+
+.bg-vermelho {
+    background-color: var(--vermelho);
+    color: #F0F0F3;
+}
+
+.z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+
+/*NAV */
+
+.nav-link .active {
+    color: var(--vermelho) !important;
+}
+
+
+#inicio, #sobre, #portfolio, #contato {
+    background-color: #EDF1FD;
+}
+
+
+
+/*INICIO */
+
+#inicio {
+    height: 100vh;
+    background-image: url("../assets/bg-inicio.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box-inicio {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#box-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#box-rede-social {
+    display: flex;
+    justify-content: center;
+}
+
+#box-rede-social a {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+#box-rede-social a:hover {
+    background-color: #F0F0F3;
+    box-shadow: -10px -10px 30px 0 #FFFFFF,
+        10px 10px 30px 0 #AEAEC0;
+}
+
+#box-rede-social img {
+    width: 30px;
+}
+
+#box-btn {
+    padding: 15px;
+}
+
+#box-btn a {
+    border-radius: 100px;
+}
+
+
+
+/*SOBRE */
+
+#sobre {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#box-skills h1::after {
+    content: "";
+    width: 110px;
+    height: 3px;
+    background-color: var(--vermelho);
+    display: block;
+}
+
+#box-skills p {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#box-sobre h1::after {
+    content: "";
+    width: 130px;
+    height: 3px;
+    background-color: var(--font-color);
+    display: block;
+}
+
+#box-skills .progress {
+    background-color: #a2a2a2;
+}
+
+#box-skills .progress-bar {
+    background-color: var(--vermelho);
+}
+
+
+
+/*PORTFOLIO */
+
+#portfolio {
+    padding-bottom: 100px;
+}
+
+#portfolio h1 {
+    margin-bottom: 50px;
+}
+
+#portfolio h1::after {
+    content: "";
+    width: 180px;
+    height: 3px;
+    background-color: var(--vermelho);
+    display: block;
+}
+
+#portfolio img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    border-radius: 5px 5px 0 0;
+}
+
+
+/*CONTATO */
+
+#contato {
+    padding-bottom: 100px;
+}
+
+#contato h1::after {
+    content: "";
+    width: 160px;
+    height: 3px;
+    background-color: var(--vermelho);
+    display: block;
+}
+
+#contato a {
+    padding: 30px;
+}
+
+#contato img {
+    width: 50px;
+}
+
+
+
+
+
+
+
+/*FOOTER */
+
+footer {
+   background-color: #DBE1F1;
+}
+
+footer p {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*sm Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*md Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .navbar-nav li {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #box-inicio {
+        flex-direction: row;
+    }
+
+    #box-rede-social {
+        flex-direction: column;
+    }
+}
+
+/*lg Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/*xl Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
