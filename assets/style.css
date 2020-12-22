@@ -148,13 +148,17 @@ body {
     display: block;
 }
 
-#portfolio img {
+#portfolio .card>a>img {
     width: 100%;
     max-height: 240px;
     object-fit: cover;
     object-position: top;
     border-bottom: 1px solid rgba(0,0,0,0.4);
     border-radius: 5px 5px 0 0;
+}
+
+#portfolio .modal-body img {
+    width: 100%;
 }
 
 
